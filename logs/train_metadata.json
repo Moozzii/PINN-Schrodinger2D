@@ -1,0 +1,9 @@
+{
+    "epochs": 8000,
+    "final_model": "checkpoints/wave_final.pth",
+    "log_csv": "logs/wave.csv",
+    "kx": 4,
+    "ky": 4,
+    "x0": 0.5,
+    "y0": 0.5
+}
