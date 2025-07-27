@@ -47,6 +47,5 @@ Clone the repo and run the experiment:
 
 ```bash
 git clone https://github.com/Moozzii/PINN-Schrodinger2D
-cd schrodinger-2d-pinn
 pip install -r requirements.txt
 python -m experiment/schrodinger2d_pinn_experiment
