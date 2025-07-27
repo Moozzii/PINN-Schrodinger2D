@@ -21,7 +21,7 @@ Rather than predicting outputs from data, the model **learns to respect physical
 - 🧱 Built using [SIREN (sinusoidal representation networks)](https://arxiv.org/abs/2006.09661) for smooth representation of high-frequency wavefunctions
 - 🎥 Generates clean, arXiv-ready plots and animations of wavefunction evolution
 - 📉 Tracks **norm conservation** and expectation values to verify physical consistency
-- 🧪 Modular training and visualization pipeline, easy to extend to 3D or potentials
+- 🧪 Modular training and visualization pipeline, easy to extend to 3D or potential
 
 ---
 
@@ -49,4 +49,4 @@ Clone the repo and run the experiment:
 git clone https://github.com/Moozzii/PINN-Schrodinger2D
 cd schrodinger-2d-pinn
 pip install -r requirements.txt
-python experiment/schrodinger2d_pinn.experiment
+python -m experiment/schrodinger2d_pinn_experiment
