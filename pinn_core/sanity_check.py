@@ -1,7 +1,7 @@
 import torch
 import matplotlib.pyplot as plt
 
-def sanity_check(model, physics, t=0.0, title='Sanity Check at t=0'):
+def sanity_check(model, t=0.0, title='Sanity Check at t=0'):
     model.eval()
     with torch.no_grad():
         # Grid

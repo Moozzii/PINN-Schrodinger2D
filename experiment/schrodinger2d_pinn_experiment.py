@@ -54,7 +54,7 @@ model.eval()
 # ==== Plot Time Snapshots ====
 for t in [0, 0.25, 0.5, 0.75, 1.0]:
     plot_Schrodinger_wavefunction(model, t_fixed=t, save_path=f"plots/wave_at_t{t}.png")
-    sanity_check(model, physics, t=t, title=f"Wavefunction at t={t}")
+    sanity_check(model, t=t, title=f"Wavefunction at t={t}")
 
 # ==== Loss & Norm Drift Plots ====
 plot_loss_components(loss_logs, save_path="plots/loss_components.png")
