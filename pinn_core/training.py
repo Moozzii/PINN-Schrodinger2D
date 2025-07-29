@@ -16,7 +16,7 @@ def Training_Loop(model, physics, epochs=6000, log_file="loss_logs.csv", plot_ev
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = model.to(device)
-
+    
     lr = 1e-4
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr)
 

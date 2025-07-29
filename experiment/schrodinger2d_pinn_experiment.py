@@ -5,7 +5,6 @@ import torch
 from equation.schrodinger2d_pinn import Schrodinger_2D
 from pinn_core.model import PINN_ID
 from pinn_core.training import Training_Loop
-from pinn_core.sanity_check import sanity_check
 from pinn_core.utils import (
     plot_Schrodinger_wavefunction,
     plot_loss_components,
@@ -54,7 +53,6 @@ model.eval()
 # ==== Plot Time Snapshots ====
 for t in [0, 0.25, 0.5, 0.75, 1.0]:
     plot_Schrodinger_wavefunction(model, t_fixed=t, save_path=f"plots/wave_at_t{t}.png")
-    sanity_check(model, t=t, title=f"Wavefunction at t={t}")
 
 # ==== Loss & Norm Drift Plots ====
 plot_loss_components(loss_logs, save_path="plots/loss_components.png")
